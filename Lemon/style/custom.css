@@ -1,0 +1,7 @@
+.lemon {
+    width: 350px;
+    height: 350px;
+    background: url(../img/lemon.jpg);
+    background-size: 530px;
+    border-radius: 40px 200px 60px 200px;
+}
