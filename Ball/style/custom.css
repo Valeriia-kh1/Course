@@ -1,0 +1,71 @@
+.ball {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    background: url(../img/soccer.webp);
+    background-size: 250px;
+    animation-name: jump, bounce, spin;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+    0% {bottom: 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
+    15% {bottom: 50px; box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);}
+    30% {bottom: 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
+    45% {bottom: 50px; box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);}
+    60% {bottom: 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
+    75% {bottom: 50px; box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);}
+    90% {bottom: 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);}
+    100% {bottom: 50px; box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(405deg);}
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+        left: 50px;
+        height: 150px;
+    }
+    15% {
+        top: 550px;
+        left: 100px;
+        height: 130px;
+    }
+    30% {
+        top: 200px;
+        left: 200px;
+        height: 150px;
+    }
+    45% {
+        top: 550px;
+        left: 400px;
+        height: 130px;
+    }
+    60% {
+        top: 400px;
+        left: 600px;
+        height: 150px;
+    }
+    75% {
+        top: 550px;
+        left: 800px;
+        height: 135px;
+    }
+    90% {
+        top: 500px;
+        left: 1000px;
+        height: 140px;
+    }
+    100% {
+        top: 550px;
+        left: 1100px;
+        height: 150px;
+    }
+}
